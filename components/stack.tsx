@@ -41,7 +41,7 @@ export function Stack() {
                 <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                 <div>
                   <div className="font-semibold">End-to-End Encryption</div>
-                  <div className="text-sm text-muted-foreground">AES-256 with zero-knowledge architecture</div>
+                  <div className="text-sm text-muted-foreground">AES-256 with military grade security</div>
                 </div>
               </div>
               

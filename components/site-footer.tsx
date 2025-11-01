@@ -13,7 +13,7 @@ export function SiteFooter() {
             <span>|</span>
             <span>Platform for Secure AI Agents</span>
             <span>|</span>
-            <span>v1.2</span>
+            <span>v1.3</span>
           </div>
           
           <div className="flex items-center space-x-4">
