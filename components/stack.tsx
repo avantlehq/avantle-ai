@@ -9,10 +9,18 @@ export function Stack() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h2 className="text-3xl font-bold">
-              Private Agents Architecture
+              AvantleCore Architecture
             </h2>
             
             <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
+                <div>
+                  <div className="font-semibold">AvantleCore Runtime</div>
+                  <div className="text-sm text-muted-foreground">One core that powers infinite local agents</div>
+                </div>
+              </div>
+              
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                 <div>
@@ -54,6 +62,13 @@ export function Stack() {
                 <div className="space-y-3">
                   <div className="flex items-center justify-between p-3 bg-background rounded border">
                     <span className="text-sm font-mono">Your Device</span>
+                    <span className="text-xs text-green-500">●</span>
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <div className="w-px h-6 bg-border"></div>
+                  </div>
+                  <div className="flex items-center justify-between p-3 bg-background rounded border">
+                    <span className="text-sm font-mono">AvantleCore Runtime</span>
                     <span className="text-xs text-green-500">●</span>
                   </div>
                   <div className="flex items-center justify-center">
