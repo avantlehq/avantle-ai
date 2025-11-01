@@ -24,7 +24,7 @@ export function Stack() {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                 <div>
-                  <div className="font-semibold">AvantleCore Runtime</div>
+                  <div className="font-semibold">AvantleCore Platform</div>
                   <div className="text-sm text-muted-foreground">One core that powers infinite local agents</div>
                 </div>
               </div>
@@ -68,7 +68,7 @@ export function Stack() {
                     <div className="w-px h-6 bg-border"></div>
                   </div>
                   <div className="flex items-center justify-between p-3 bg-background rounded border">
-                    <span className="text-sm font-mono">AvantleCore Runtime</span>
+                    <span className="text-sm font-mono">AvantleCore Platform</span>
                     <span className="text-xs text-green-500">●</span>
                   </div>
                   <div className="flex items-center justify-center">
