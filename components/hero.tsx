@@ -9,10 +9,10 @@ export function Hero() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-            <span className="text-primary">Privacy by Design.</span>
+            Platform for <span className="text-primary">Secure AI Agents</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Build the operating system for private AI — one core that powers infinite local agents.
+            Privacy by Design. One core that powers infinite local agents.
           </p>
           
           <div className="flex justify-center">
