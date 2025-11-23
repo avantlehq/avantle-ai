@@ -2,8 +2,11 @@
 
 import Link from "next/link"
 import { Github, Mail, FileText } from "lucide-react"
+import { getVersionInfo } from "../lib/version"
 
 export function SiteFooter() {
+  const versionInfo = getVersionInfo()
+  
   return (
     <footer className="border-t bg-background">
       <div className="container mx-auto max-w-6xl py-8 px-4">
@@ -13,7 +16,9 @@ export function SiteFooter() {
             <span>|</span>
             <span>Platform for Secure AI Agents</span>
             <span>|</span>
-            <span>v1.3</span>
+            <span title={`${versionInfo.name} - Built ${versionInfo.buildDate}`}>
+              v{versionInfo.version}
+            </span>
           </div>
           
           <div className="flex items-center space-x-4">
