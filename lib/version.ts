@@ -1,6 +1,6 @@
 // Avantle.ai Version Information
-export const VERSION = "0.2.0" as const
-export const VERSION_NAME = "DPIA Theme Unification" as const
+export const VERSION = "0.3.0" as const
+export const VERSION_NAME = "Password Protection - 789" as const
 export const BUILD_DATE = new Date().toISOString().split('T')[0]
 
 export const getVersionInfo = () => ({
@@ -13,6 +13,41 @@ export const getVersionInfo = () => ({
 
 // Version changelog
 export const CHANGELOG = {
+  "0.3.0": {
+    date: "2024-12-07",
+    name: "Password Protection - 789",
+    features: [
+      "Implemented password protection system with access code '789'",
+      "Cookie-based authentication (avantle_access) lasting 30 days",
+      "Beautiful login screen with modern gradient background",
+      "Lock icon and professional styling matching DPIA platform",
+      "Automatic authentication check on page load",
+      "Error handling for invalid access codes"
+    ],
+    improvements: [
+      "Protected Avantle.ai from public internet access",
+      "Consistent authentication system across Avantle platforms",
+      "Professional login experience with animated backgrounds",
+      "Secure cookie handling with production HTTPS support",
+      "User-friendly error messaging and loading states",
+      "Persistent authentication reducing login frequency"
+    ],
+    technical: [
+      "Client-side authentication with cookie storage",
+      "useEffect for authentication state checking",
+      "Conditional rendering based on authentication status",
+      "Modern gradient backgrounds with CSS animations",
+      "Responsive design for all device sizes",
+      "TypeScript strict mode compliance"
+    ],
+    security: [
+      "Simple password protection (789) for platform access",
+      "30-day persistent authentication cookies",
+      "HTTPS-only cookies in production environment",
+      "SameSite=Lax cookie policy for security",
+      "Input validation and error handling"
+    ]
+  },
   "0.2.0": {
     date: "2024-11-23",
     name: "DPIA Theme Unification",
