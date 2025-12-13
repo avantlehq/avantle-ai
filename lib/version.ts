@@ -1,6 +1,6 @@
 // Avantle.ai Version Information
-export const VERSION = "0.4.0" as const
-export const VERSION_NAME = "Remove Password Protection" as const
+export const VERSION = "0.4.1" as const
+export const VERSION_NAME = "Clean Content Update" as const
 export const BUILD_DATE = new Date().toISOString().split('T')[0]
 
 export const getVersionInfo = () => ({
@@ -13,6 +13,34 @@ export const getVersionInfo = () => ({
 
 // Version changelog
 export const CHANGELOG = {
+  "0.4.1": {
+    date: "2024-12-13",
+    name: "Clean Content Update",
+    features: [
+      "Simplified main landing page to focused content only",
+      "Clean typography with centered layout design",
+      "Clear messaging about Privacy by Design principles",
+      "European values and GDPR-native positioning"
+    ],
+    improvements: [
+      "Removed complex sections for streamlined experience", 
+      "Better focus on core Avantle mission and values",
+      "Responsive text sizing for all device types",
+      "Professional minimal design with maximum impact"
+    ],
+    technical: [
+      "Simplified page.tsx removing Hero, Problem, Stack, MissionVision, Agents",
+      "Flexbox layout for proper vertical centering",
+      "Responsive typography with Tailwind breakpoints",
+      "Clean component structure with header and footer only"
+    ],
+    content: [
+      "Avantle.ai headline with large typography",
+      "Privacy by Design emphasized messaging",
+      "No tracking, no telemetry, no compromises statement",
+      "European values and independence from big tech"
+    ]
+  },
   "0.4.0": {
     date: "2024-12-13",
     name: "Remove Password Protection",
