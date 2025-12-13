@@ -1,6 +1,6 @@
 // Avantle.ai Version Information
-export const VERSION = "0.4.1" as const
-export const VERSION_NAME = "Clean Content Update" as const
+export const VERSION = "0.4.2" as const
+export const VERSION_NAME = "Text Cleanup" as const
 export const BUILD_DATE = new Date().toISOString().split('T')[0]
 
 export const getVersionInfo = () => ({
@@ -13,6 +13,28 @@ export const getVersionInfo = () => ({
 
 // Version changelog
 export const CHANGELOG = {
+  "0.4.2": {
+    date: "2024-12-13",
+    name: "Text Cleanup",
+    features: [
+      "Removed 'Platform for Secure AI Agents' text from footer",
+      "Removed European values paragraph from main content",
+      "Cleaner minimalist messaging focused on core values",
+      "Streamlined footer with only essential information"
+    ],
+    improvements: [
+      "Simplified main content to two core statements",
+      "Reduced footer clutter for better focus",
+      "More concise messaging without regional references",
+      "Enhanced minimalist design approach"
+    ],
+    content: [
+      "Removed: 'Built on European values — GDPR-native, fully transparent, and independent from big tech hyperscalers'",
+      "Removed: 'Platform for Secure AI Agents' from footer",
+      "Retained: 'Privacy by Design' and 'No tracking. No telemetry. No compromises.'",
+      "Clean footer with only 'Made in EU' and version info"
+    ]
+  },
   "0.4.1": {
     date: "2024-12-13",
     name: "Clean Content Update",

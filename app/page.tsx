@@ -21,9 +21,6 @@ export default function HomePage() {
               No tracking. No telemetry. No compromises.
             </p>
             
-            <p>
-              Built on European values — GDPR-native, fully transparent, and independent from big tech hyperscalers.
-            </p>
           </div>
         </div>
       </main>

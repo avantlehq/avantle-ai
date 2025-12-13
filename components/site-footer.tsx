@@ -14,8 +14,6 @@ export function SiteFooter() {
           <div className="flex items-center space-x-4 text-sm text-muted-foreground">
             <span>Made in EU</span>
             <span>|</span>
-            <span>Platform for Secure AI Agents</span>
-            <span>|</span>
             <span title={`${versionInfo.name} - Built ${versionInfo.buildDate}`}>
               v{versionInfo.version}
             </span>
