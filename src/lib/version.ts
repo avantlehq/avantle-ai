@@ -1,10 +1,22 @@
 // VERSION MANAGEMENT SYSTEM FOR AVANTLE.AI
 // This file tracks the current version and changelog for the Avantle.ai platform
 
-export const VERSION = '1.1.0'
-export const VERSION_NAME = 'Multi-Language Support'
+export const VERSION = '1.1.1'
+export const VERSION_NAME = 'Language Switching Fix'
 
 export const CHANGELOG = [
+  {
+    version: '1.1.1',
+    name: 'Language Switching Fix',
+    date: '2026-01-04',
+    changes: [
+      '🔧 **SWITCHING FIX**: Fixed language switching not working properly',
+      '🏷️ **CLEAN LABELS**: Changed language switcher to show only SK/DE/EN instead of flags',
+      '⚙️ **CONTEXT PROVIDER**: Implemented React Context for proper state management',
+      '🔄 **REACTIVE UPDATES**: All components now re-render when language changes',
+      '🎯 **UX IMPROVED**: Cleaner language switcher without duplicate labels'
+    ]
+  },
   {
     version: '1.1.0',
     name: 'Multi-Language Support',

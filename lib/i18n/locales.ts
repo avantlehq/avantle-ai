@@ -13,7 +13,7 @@ export const languageNames: Record<Locale, string> = {
 
 // Language flags/codes for display
 export const languageFlags: Record<Locale, string> = {
-  en: '🇺🇸',
-  sk: '🇸🇰',
-  de: '🇩🇪'
+  en: 'EN',
+  sk: 'SK', 
+  de: 'DE'
 }

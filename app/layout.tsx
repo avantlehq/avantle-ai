@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { cn } from '../lib/utils'
+import { TranslationWrapper } from '@/components/translation-wrapper'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,7 +33,9 @@ export default function RootLayout({
         inter.className,
         "min-h-screen bg-background font-sans antialiased"
       )}>
-        {children}
+        <TranslationWrapper>
+          {children}
+        </TranslationWrapper>
       </body>
     </html>
   )
