@@ -16,9 +16,8 @@ export default function HomePage() {
             </div>
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">
-              <span className="text-foreground">Avantle</span>
-              <span className="text-dpia-blue"> Privacy</span>
-              <span className="text-dpia-green block md:inline"> Platform</span>
+              <span className="text-foreground">Avantle </span>
+              <span className="text-foreground">Privacy Platform</span>
             </h1>
             
             <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">

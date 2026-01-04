@@ -27,7 +27,7 @@ export function SiteHeader() {
               <div className="flex items-baseline space-x-2">
                 <div className="flex flex-col">
                   <span className="font-bold text-foreground leading-tight">
-                    Avantle <span className="text-dpia-blue">Privacy</span>
+                    Avantle Privacy
                   </span>
                   <span className="text-xs text-muted-foreground">Platform</span>
                 </div>

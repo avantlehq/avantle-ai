@@ -1,10 +1,21 @@
 // VERSION MANAGEMENT SYSTEM FOR AVANTLE.AI
 // This file tracks the current version and changelog for the Avantle.ai platform
 
-export const VERSION = '1.0.3'
-export const VERSION_NAME = 'Privacy Platform Branding'
+export const VERSION = '1.0.4'
+export const VERSION_NAME = 'Clean Typography'
 
 export const CHANGELOG = [
+  {
+    version: '1.0.4',
+    name: 'Clean Typography',
+    date: '2026-01-04',
+    changes: [
+      '🎨 **SIMPLIFIED HERO**: Changed hero title to white "Privacy Platform" for clean look',
+      '🏷️ **TOPBAR CLEAN**: Removed blue color from "Privacy" in header for consistent white text',
+      '✨ **MINIMAL DESIGN**: Cleaner, more professional appearance without color distractions',
+      '🎯 **FOCUS**: Emphasis on content rather than colorful typography'
+    ]
+  },
   {
     version: '1.0.3',
     name: 'Privacy Platform Branding',
