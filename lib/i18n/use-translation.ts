@@ -29,8 +29,9 @@ export function useTranslation() {
     globalSetters.push(setLocaleState)
 
     // Listen for locale changes from other components
-    const handleLocaleChange = (event: CustomEvent) => {
-      const newLocale = event.detail as Locale
+    const handleLocaleChange = (event: Event) => {
+      const customEvent = event as CustomEvent<Locale>
+      const newLocale = customEvent.detail
       setLocaleState(newLocale)
     }
 
