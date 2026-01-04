@@ -1,10 +1,22 @@
 // VERSION MANAGEMENT SYSTEM FOR AVANTLE.AI
 // This file tracks the current version and changelog for the Avantle.ai platform
 
-export const VERSION = '1.1.2'
-export const VERSION_NAME = 'Emergency Deployment Fix'
+export const VERSION = '1.1.3'
+export const VERSION_NAME = 'Content Cleanup & Manifesto'
 
 export const CHANGELOG = [
+  {
+    version: '1.1.3',
+    name: 'Content Cleanup & Manifesto',
+    date: '2026-01-04',
+    changes: [
+      '✨ **HERO CLEANUP**: Simplified hero section to show only "Privacy by Design"',
+      '🏷️ **GDPR FOCUS**: Changed "European First" to "GDPR Compliant" in features',
+      '🧹 **CONTENT REMOVAL**: Removed unnecessary taglines and tracking disclaimers',
+      '📄 **MANIFESTO PAGE**: Added professional "Coming Soon" page at /manifesto',
+      '🎯 **FOCUSED MESSAGING**: Cleaner, more direct privacy platform positioning'
+    ]
+  },
   {
     version: '1.1.2',
     name: 'Emergency Deployment Fix',

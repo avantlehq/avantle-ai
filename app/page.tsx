@@ -10,18 +10,18 @@ export default function HomePage() {
   const t = {
     europeanPrivacyPlatform: "European Privacy Platform",
     heroTitle: "Privacy Platform",
-    heroSubtitle: "One core that powers infinite local agents",
-    heroDescription: "Privacy by Design. European data sovereignty. GDPR compliance built-in.",
+    heroSubtitle: "Privacy by Design",
+    heroDescription: "",
     dpiaAutomation: "DPIA Automation",
     dpiaAutomationDesc: "Automated Data Protection Impact Assessments with guided workflows",
     multiTenantPlatform: "Multi-Tenant Platform", 
     multiTenantPlatformDesc: "Scalable platform for multiple organizations and partners",
-    europeanFirst: "European First",
+    europeanFirst: "GDPR Compliant",
     europeanFirstDesc: "Built for European data sovereignty and GDPR compliance",
     launchPlatform: "Launch Platform",
     platformAdministration: "Platform Administration",
     or: "or",
-    noTracking: "No tracking. No analytics. Your privacy is protected."
+    noTracking: ""
   }
   return (
     <div className="min-h-screen flex flex-col">
@@ -42,9 +42,6 @@ export default function HomePage() {
             
             <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
               {t.heroSubtitle}
-              <span className="block mt-2 text-lg md:text-xl text-foreground font-medium">
-                {t.heroDescription}
-              </span>
             </p>
           </div>
 
@@ -100,7 +97,6 @@ export default function HomePage() {
                 {t.platformAdministration}
               </a>
             </div>
-            <p className="text-xs text-muted-foreground">{t.noTracking}</p>
           </div>
         </div>
       </main>
