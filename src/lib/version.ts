@@ -1,10 +1,24 @@
 // VERSION MANAGEMENT SYSTEM FOR AVANTLE.AI
 // This file tracks the current version and changelog for the Avantle.ai platform
 
-export const VERSION = '1.0.0'
-export const VERSION_NAME = 'Admin Console Launch'
+export const VERSION = '1.0.1'
+export const VERSION_NAME = 'Build Fixes & Stability'
 
 export const CHANGELOG = [
+  {
+    version: '1.0.1',
+    name: 'Build Fixes & Stability',
+    date: '2026-01-04',
+    changes: [
+      '🔧 **BUILD FIXES**: Resolved TypeScript compilation errors and import path issues',
+      '📁 **IMPORT PATHS**: Fixed version import paths from @/lib/version to @/src/lib/version',
+      '🔒 **TYPE SAFETY**: Added proper type assertions for User interface and API responses',
+      '📦 **INTERFACE UPDATES**: Added slug and custom_domain properties to Tenant interface',
+      '🌐 **HEADERS FIX**: Fixed HeadersInit type issues in API client',
+      '🎯 **CLIENT DIRECTIVES**: Added "use client" directive for SSR compatibility',
+      '⚡ **DEPLOYMENT**: Successful production deployment with all TypeScript errors resolved'
+    ]
+  },
   {
     version: '1.0.0',
     name: 'Admin Console Launch',
@@ -18,7 +32,8 @@ export const CHANGELOG = [
       '🔌 **CORE API INTEGRATION**: Connected to deployed core-avantle-ai control plane',
       '📊 **ADMIN DASHBOARD**: System statistics, activity feed, and usage analytics',
       '🛡️ **SECURITY**: Unauthorized access handling and proper role validation',
-      '⚡ **PRODUCTION READY**: Full deployment ready with error handling and loading states'
+      '⚡ **PRODUCTION READY**: Full deployment ready with error handling and loading states',
+      '📋 **VERSION MANAGEMENT**: Complete version tracking system with changelog page'
     ]
   }
 ]

@@ -6,7 +6,7 @@ Context for Claude Code working with Avantle.ai repository - Control Plane Front
 
 **Avantle.ai** - Frontend interface for the Avantle Privacy Platform with integrated admin console for multi-tenant partner and tenant management.
 
-**Current Status: VERSION 1.0.0 - Admin Console Launch**
+**Current Status: VERSION 1.0.1 - Build Fixes & Stability**
 
 ### Latest Achievements (January 4, 2026)
 - ✅ **ADMIN CONSOLE COMPLETE**: Platform Admin Console (/admin) and Partner Portal (/partners)
@@ -110,11 +110,26 @@ Partner Browser → avantle.ai (Frontend) → core.avantle.ai (Control Plane API
 ## Development Workflow
 
 ### Version Management Rules
-**⚠️ MANDATORY: Always update version after every deployment!**
-1. Update `src/lib/version.ts` (VERSION, VERSION_NAME, CHANGELOG)
-2. Update `package.json` version
-3. Commit with detailed version bump message
+**⚠️ MANDATORY: Always update version after EVERY deployment (including debug/fix deployments)!**
+
+**STRICT VERSION POLICY:**
+1. **Every Git Push = Version Bump** - No exceptions, even for small fixes
+2. **Always Report Version** - Write the new version number in chat after every deployment
+3. **Update Both Files** - `src/lib/version.ts` + `package.json` 
+4. **Complete Changelog** - Add entry to CHANGELOG with date and changes
+5. **Semantic Versioning** - Use x.y.z format (major.minor.patch)
+
+**Version Update Process:**
+1. Update `src/lib/version.ts` (VERSION, VERSION_NAME, CHANGELOG entry)
+2. Update `package.json` version to match
+3. Commit with detailed version bump message including new version number
 4. Push to production (auto-deploys to Vercel)
+5. **ALWAYS write in chat: "🚀 Deployed VERSION X.Y.Z - Description"**
+
+**Version Numbering:**
+- **Patch (x.y.Z++)** - Bug fixes, build fixes, small improvements
+- **Minor (x.Y++.0)** - New features, significant enhancements  
+- **Major (X++.0.0)** - Breaking changes, major architecture updates
 
 ### Development Commands
 ```bash
@@ -213,6 +228,15 @@ avantle-ai/
 **Local Path**: `C:\Users\rasti\Projects\avantlehq\avantle-ai\`
 
 ## Version History
+
+### v1.0.1 "Build Fixes & Stability" (2026-01-04)
+- 🔧 **BUILD FIXES**: Resolved TypeScript compilation errors and import path issues
+- 📁 **IMPORT PATHS**: Fixed version import paths from @/lib/version to @/src/lib/version
+- 🔒 **TYPE SAFETY**: Added proper type assertions for User interface and API responses
+- 📦 **INTERFACE UPDATES**: Added slug and custom_domain properties to Tenant interface
+- 🌐 **HEADERS FIX**: Fixed HeadersInit type issues in API client
+- 🎯 **CLIENT DIRECTIVES**: Added "use client" directive for SSR compatibility
+- ⚡ **DEPLOYMENT**: Successful production deployment with all TypeScript errors resolved
 
 ### v1.0.0 "Admin Console Launch" (2026-01-04)
 - 🚀 **ADMIN CONSOLE COMPLETE**: Platform Admin Console (/admin) and Partner Portal (/partners)
