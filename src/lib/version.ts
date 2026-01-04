@@ -1,10 +1,22 @@
 // VERSION MANAGEMENT SYSTEM FOR AVANTLE.AI
 // This file tracks the current version and changelog for the Avantle.ai platform
 
-export const VERSION = '1.1.9'
-export const VERSION_NAME = 'SSR-Safe Translation System'
+export const VERSION = '1.1.10'
+export const VERSION_NAME = 'Hydration Fix Translation System'
 
 export const CHANGELOG = [
+  {
+    version: '1.1.10',
+    name: 'Hydration Fix Translation System',
+    date: '2026-01-04',
+    changes: [
+      '🔧 **HYDRATION FIX**: Restored proper React hooks with \'use client\' directive',
+      '⚡ **ERROR #418 RESOLVED**: Fixed server/client rendering mismatch in translation system',
+      '🌐 **FUNCTIONAL TRANSLATIONS**: Language switching should now work without page reload',
+      '🎯 **CLIENT-SIDE RENDERING**: All translation components properly marked as client components',
+      '✅ **REAL-TIME SWITCHING**: Users can change languages and see content update immediately'
+    ]
+  },
   {
     version: '1.1.9',
     name: 'SSR-Safe Translation System',
