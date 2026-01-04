@@ -1,259 +1,227 @@
 # CLAUDE.md
 
-Tento súbor poskytuje kontext pre Claude Code pri práci s Avantle.ai repozitárom.
+Context for Claude Code working with Avantle.ai repository - Control Plane Frontend.
 
-## Kontext projektu Avantle.ai
+## 🚀 **PROJECT OVERVIEW: Avantle.ai Control Plane Frontend**
 
-**Avantle.ai** je európska platforma pre bezpečné AI agenty s dôrazom na Privacy by Design. Slúži ako hlavná marketingová a produktová stránka pre Avantle ekosystém, ktorý zahŕňa specializované AI nástroje pre compliance a ochranu údajov.
+**Avantle.ai** - Frontend interface for the Avantle Privacy Platform with integrated admin console for multi-tenant partner and tenant management.
 
-### Architektúra ekosystému
+**Current Status: VERSION 1.0.0 - Admin Console Launch**
 
-**Tri-komponentová architektúra Avantle ekosystému:**
+### Latest Achievements (January 4, 2026)
+- ✅ **ADMIN CONSOLE COMPLETE**: Platform Admin Console (/admin) and Partner Portal (/partners)
+- ✅ **PARTNER MANAGEMENT**: Full CRUD operations for partner organizations  
+- ✅ **TENANT DASHBOARD**: System-wide tenant management with filtering and statistics
+- ✅ **ROLE-BASED AUTH**: JWT authentication with Platform Admin and Partner Admin roles
+- ✅ **MODERN UI**: Card-based layout with DPIA color scheme and responsive design
+- ✅ **CORE API INTEGRATION**: Connected to deployed core-avantle-ai control plane
+- ✅ **VERSION MANAGEMENT**: Complete version tracking system with changelog page
+- ✅ **PRODUCTION DEPLOYMENT**: Live at avantle.ai with full admin functionality
 
-1. **Avantle.ai** (marketing layer) - **TENTO REPOZITÁR**
-   - Doména: `avantle.ai`  
-   - Repo: `avantlehq/avantle-ai`
-   - Funkcie: landing page, product showcase, lead generation, manifesto, brand identity
+### Foundation Achievements  
+- ✅ **Multi-Tenant Architecture**: Partner → Tenant → DPIA Runtime hierarchy
+- ✅ **Control Plane Frontend**: Web interface for core-avantle-ai API management
+- ✅ **Enterprise Navigation**: Professional header with version display and admin access
+- ✅ **Security Implementation**: Role-based access control with proper JWT handling
+- ✅ **Responsive Design**: Mobile-friendly admin console with modern card layouts
 
-2. **DPO Studio** (admin layer)
-   - Doména: `dpostudio.ai`
-   - Repo: `avantlehq/dpo-studio-ai` 
-   - Funkcie: tenant management, billing, whitelabel configurations, SSO
+### Production Status
+**URL**: https://avantle.ai - **LIVE & FULLY FUNCTIONAL**
 
-3. **DPIA Agent** (compliance engine)
-   - Doména: `dpo.avantle.ai` (runtime), `dpia.avantle.ai` (DPIA suite)
-   - Repo: `avantlehq/dpo-avantle-ai`, `avantlehq/dpia-avantle-ai`
-   - Funkcie: automated GDPR assessments, AI-powered compliance tools
+**Core Features Complete:**
+- ✅ **Platform Admin Console**: Full system administration dashboard (/admin)
+- ✅ **Partner Portal**: Partner management interface (/partners)
+- ✅ **Authentication Flow**: Login with demo credentials and role-based routing
+- ✅ **Partner CRUD**: Create, read, update partner organizations
+- ✅ **Tenant Management**: System-wide tenant overview and filtering
+- ✅ **Version Display**: Version tracking in navigation, footer, and changelog page
 
-### Produkt vízia
+**Technical Stack:**
+- Framework: Next.js 16.0.10 + React 18 + TypeScript
+- Backend: Core API integration (https://core-avantle-ezuyyhjei-ramix24s-projects.vercel.app)
+- Styling: Tailwind CSS + DPIA color scheme integration
+- Theme: Dark theme with DPIA-compatible design tokens
+- Authentication: JWT-based with localStorage persistence
+- Deployment: Vercel with automated CI/CD from GitHub
+- Version Management: Semantic versioning with changelog system
 
-**"Privacy by Design. One core that powers infinite local agents."**
+## Architecture Context
 
-Avantle.ai prezentuje víziu lokálnych AI agentov s kompletným šifrovaním a data sovereignty:
-- **Local-first**: On-premise deployment pre enterprise
-- **E2EE**: End-to-end encryption všetkých dát
-- **GDPR compliant**: Built-in privacy by design
-- **EU-focused**: Európske hodnoty a regulačné štandardy
-
-## Aktuálny stav repozitára (Version 0.2.0)
-
-### ✅ Hotové komponenty (Version 0.2.0 - DPIA Theme Unification)
-
-**Infraštruktúra:**
-- Next.js 16 + TypeScript + Tailwind CSS setup
-- Vercel deployment konfigurácia (vercel.json)
-- Environment variables template
-- **Unified theme system** s DPIA Agent (ultra-soft RGB(25,39,52))
-
-**Versioning System:**
+### Multi-Tier Platform Architecture
 ```
-lib/
-└── version.ts               # Complete version tracking with changelog
-app/api/
-├── version/
-│   └── route.ts            # GET /api/version - version info + changelog
-└── health/
-    └── route.ts            # GET /api/health - health check + version
+Partner Browser → avantle.ai (Frontend) → core.avantle.ai (Control Plane API) → dpia.avantle.ai (Runtime)
 ```
 
-**UI Components (Professional Landing Page):**
-- Landing page (app/page.tsx) - hero section, mission, problem/solution, CTA
-- Site header (components/site-header.tsx) - navigation, branding
-- Site footer (components/site-footer.tsx) - **dynamic versioning**, links, branding
-- Hero section - value proposition a core messaging
-- Mission/Vision - Avantle philosophy a vízia
-- Problem/Solution - market positioning
-- Technology stack showcase
-- Call-to-action sections
+**Avantle.ai Role:**
+- **Control Plane Frontend** - Web interface for platform administration
+- **Partner Management** - Partner organization creation and management
+- **Tenant Configuration** - Tenant setup and access policy management  
+- **User Authentication** - Admin login with role-based access control
 
-**Theme System (v0.2.0):**
-```
-app/globals.css              # Ultra-soft RGB(25,39,52) theme system
-tailwind.config.ts           # DPIA category colors + gradient utilities  
-components/
-├── theme-provider.tsx       # Next-themes integration
-└── client-theme-provider.tsx # Client-side wrapper
-```
+### Role-Based Access Control (RBAC)
+- **Platform Admin** (`/admin`) - Full system administration across all partners
+- **Partner Admin** (`/partners`) - Partner-specific management and tenant creation
+- **Unauthorized handling** - Proper access denial with redirect to `/unauthorized`
 
-### 🎨 Design System (Version 0.2.0)
+### Core API Integration
+- **Base URL**: https://core-avantle-ezuyyhjei-ramix24s-projects.vercel.app
+- **Authentication**: JWT Bearer token with localStorage persistence
+- **Endpoints**: Partners, Tenants, Admin stats, Activity monitoring
+- **Error Handling**: Comprehensive API response handling with user feedback
 
-**Unified Theme Architecture:**
-- **Base Background**: Ultra-soft RGB(25,39,52) = `#192734`
-- **CSS Variables**: Complete system matching DPIA Agent
-- **Category Colors**: Blue, green, orange, red, purple, gray
-- **Typography**: Inter font family with antialiasing
-- **Gradients**: Theme-aware background gradients (`.avantle-gradient`)
+## Component Architecture
 
-**Color Consistency:**
-```css
-/* DPIA Color System - CSS Variables */
---color-blue: #4A90E2;    /* Main/Dashboard */
---color-green: #7ED321;   /* Assessment/Pre-check */
---color-orange: #F5A623;  /* Builder/DPIA */
---color-red: #FF6B6B;     /* Risk Management */
---color-purple: #9B59B6;  /* Settings/Export */
---color-gray: #A9A9A9;    /* Drafts/Neutral */
+### Admin Console Structure
+- **AdminLayout**: Shared layout for all admin pages with sidebar navigation
+- **Partner Components**: Partners list, detail view, creation form
+- **Tenant Components**: System-wide tenant management and statistics
+- **Dashboard Components**: Admin overview with stats cards and activity feeds
 
-/* Standardized Opacity Variables */
---border-opacity: 0.3;     /* 30% for border accents */
---icon-opacity: 0.15;      /* 15% for icon backgrounds */
---hover-opacity: 0.25;     /* 25% for hover states */
---underline-opacity: 0.4;  /* 40% for underline accents */
-```
+### Navigation System
+- **SiteHeader**: Main navigation with version display and role-based links
+- **SiteFooter**: Footer with version info, build date, and git commit details
+- **Version Management**: Display current version in multiple locations
 
-### 🔧 Technické detaily
+### Authentication Flow
+- **Login Page** (`/login`) - Email/password with demo credentials
+- **Auth Utils** (`lib/auth.ts`) - JWT handling, role validation, route protection
+- **Protected Routes** - requireAuth() for admin pages with role checking
 
-**Tech stack:**
-- Framework: Next.js 16 s App Router
-- Styling: Tailwind CSS v4 s unified theme system
-- TypeScript: Plná type safety
-- Package manager: npm
-- Icons: Lucide React
-- Deployment: Vercel automatic deployment
-- Versioning: Custom system s API endpoints
+## UX & Design Principles
 
-**Theme Integration:**
-- Konzistentný s DPIA Agent styling systémom
-- CSS variables pre seamless theming
-- Tailwind utilities pre DPIA category colors
-- Theme-aware gradients pre light/dark mode
-- Professional enterprise-grade appearance
+### Design System Integration
+- **DPIA Color Scheme**: Consistent with existing DPIA platform design
+- **Card-Based Layout**: Modern enterprise appearance with proper spacing
+- **Responsive Design**: Mobile-first approach with desktop optimization
+- **Professional Typography**: Clean fonts with proper hierarchy
 
-**API Endpoints:**
+### Navigation Standards
+- **Version Display**: Always visible in header and footer for transparency
+- **Role-Based Menus**: Conditional navigation based on user permissions
+- **Active States**: Proper highlighting for current page/section
+- **Accessible Design**: Proper ARIA labels and keyboard navigation
+
+### Form & Interaction Patterns
+- **Loading States**: Skeleton loading and progress indicators
+- **Error Handling**: User-friendly error messages with retry options
+- **Form Validation**: Client-side validation with API error integration
+- **Success Feedback**: Clear confirmation of successful operations
+
+## Development Workflow
+
+### Version Management Rules
+**⚠️ MANDATORY: Always update version after every deployment!**
+1. Update `src/lib/version.ts` (VERSION, VERSION_NAME, CHANGELOG)
+2. Update `package.json` version
+3. Commit with detailed version bump message
+4. Push to production (auto-deploys to Vercel)
+
+### Development Commands
 ```bash
-GET /api/health          # Health check + version info
-GET /api/version         # Complete version data + changelog
+npm run dev           # Start dev server (localhost:3000)
+npm run build         # Build for production
+npm run lint          # Run ESLint
+git add . && git commit -m "message" && git push origin main
 ```
 
-### 🚀 Deployment status
-
-**GitHub:**
-- Repozitár: https://github.com/avantlehq/avantle-ai
-- Current commit: cb80678 (v0.2.0 - DPIA Theme Unification)
-- Auto-deployment: Vercel webhook configured
-
-**Production:**
-- Platform: Vercel 
-- Region: Europe (fra1)
-- Auto-deploy: GitHub main branch trigger
-- URL: [Vercel assigned URL]
-
-### 📊 Version History
-
-**v0.2.0 (2024-11-23) - "DPIA Theme Unification"**
-- ✅ Complete theme unification s DPIA Agent
-- ✅ Ultra-soft RGB(25,39,52) theme system implementation
-- ✅ CSS variables system pre consistent theming
-- ✅ DPIA category color integration 
-- ✅ Comprehensive versioning system
-- ✅ API endpoints pre version tracking
-- ✅ Dynamic version display v footer
-
-**v0.1.0 (2024-11-20) - "Initial Release"**
-- ✅ Next.js 16 application foundation
-- ✅ Professional landing page structure
-- ✅ Tailwind CSS styling setup
-- ✅ TypeScript configuration
-- ✅ Vercel deployment ready
-
-### 📋 Ďalšie kroky (budúce rozvojové fázy)
-
-**Phase 3A: Content Enhancement**
-1. Enhanced marketing copy a messaging
-2. Case studies a product showcases  
-3. Customer testimonials integration
-4. Blog/resources section
-5. Detailed product documentation
-
-**Phase 3B: Interactive Features**
-1. Contact forms s lead capture
-2. Newsletter subscription
-3. Demo booking system
-4. Interactive product tours
-5. Customer portal integration
-
-**Phase 3C: Advanced Marketing**
-1. SEO optimization a content marketing
-2. Multi-language support (SK/CZ/EN)
-3. A/B testing infrastructure
-4. Analytics a conversion tracking
-5. Social media integration
-
-**Phase 4: Ecosystem Integration**
-1. Single Sign-On s DPO Studio
-2. Unified user journey cross-platform
-3. Shared branding a design system
-4. Cross-platform analytics
-5. Federated identity management
-
-### 🎯 Technologická vízia
-
-**Local-First Architecture:**
-- On-premise deployment možnosti
-- End-to-end encryption pre všetky dáta
-- Offline-capable functionality
-- European data sovereignty compliance
-
-**Privacy by Design:**
-- GDPR-compliant z default
-- Zero-knowledge architecture
-- Transparent data processing
-- User-controlled privacy settings
-
-**Enterprise Ready:**
-- Whitelabel customization options
-- Multi-tenant architecture support
-- Enterprise security standards
-- Professional support infrastructure
-
-## Lokálna cesta
-
-**Projekt sa nachádza v:** `C:\Users\rasti\Projects\avantlehq\avantle-ai\`
-
-## Development commands
-
-```bash
-# Development (z avantlehq/avantle-ai/)
-npm run dev              # Start dev server (http://localhost:3000)
-npm run build           # Build for production  
-npm run start           # Start production server
-npm run lint            # Run ESLint
-
-# API Testing
-curl http://localhost:3000/api/health   # Health check + version
-curl http://localhost:3000/api/version  # Complete version info + changelog
-
-# Deployment
-git add . && git commit -m "message" && git push origin main  # Trigger auto-deployment
+### File Structure
+```
+avantle-ai/
+├── app/
+│   ├── admin/                 # Platform Admin Console
+│   ├── partners/              # Partner Portal  
+│   ├── login/                 # Authentication
+│   ├── unauthorized/          # Access denied
+│   └── changelog/             # Version history
+├── components/
+│   ├── admin/                 # Admin-specific components
+│   ├── site-header.tsx        # Main navigation
+│   └── site-footer.tsx        # Footer with version
+├── lib/
+│   ├── api/core-client.ts     # Core API integration
+│   └── auth.ts                # Authentication utilities
+└── src/lib/version.ts         # Version management
 ```
 
-## 🎨 Theme Development Guidelines
+## Technical Insights
 
-**When working with styling:**
-1. **Always use CSS variables** from globals.css
-2. **Follow DPIA color categories** pre consistent branding
-3. **Use Tailwind utilities** s predefined gradients
-4. **Maintain theme consistency** across Avantle ecosystem
-5. **Test both light and dark modes** (when implemented)
+### Security Implementation
+- **JWT Authentication**: Secure token-based auth with automatic refresh
+- **Role Validation**: Server-side role checking for admin routes
+- **CORS Handling**: Proper cross-origin request configuration
+- **Environment Variables**: Secure API endpoint configuration
 
-**Color Usage:**
-- `dpia-blue` - Primary actions, main navigation
-- `dpia-green` - Success states, positive actions  
-- `dpia-orange` - Warnings, important highlights
-- `dpia-red` - Errors, critical actions
-- `dpia-purple` - Premium features, special content
-- `dpia-gray` - Neutral states, secondary content
+### API Integration Strategy
+- **Centralized Client**: Single CoreApiClient class for all API calls
+- **Error Boundary**: Comprehensive error handling with user feedback
+- **Loading States**: Proper async operation feedback
+- **Type Safety**: Full TypeScript integration with API response types
 
-## 🔄 Integration Notes
+### Production Deployment
+- **Vercel Integration**: Automatic deployment from GitHub main branch
+- **Environment Detection**: Build-time environment variable injection
+- **Git Integration**: Automatic commit hash and branch detection
+- **Performance**: Optimized Next.js build with static generation where possible
 
-**Ecosystem Consistency:**
-- Shared theme system s DPIA Agent a DPO Studio
-- Consistent versioning pattern across projects  
-- Unified branding a visual identity
-- Shared development practices a tooling
+## Business Context
 
-**Cross-Project Dependencies:**
-- Theme variables synchronized s DPIA Agent
-- Version tracking pattern matches DPIA implementation
-- API structure consistent s compliance tools
-- Security practices aligned across ecosystem
+### Platform Ecosystem
+- **avantle.ai**: Control plane frontend (this project)
+- **core.avantle.ai**: Multi-tenant control plane API
+- **dpia.avantle.ai**: GDPR assessment runtime platform
+- **Partner domains**: Whitelabel CNAME routing (e.g., gdpr.havelka.sk)
+
+### Target Users
+- **Platform Administrators**: Full system management across all partners
+- **Partner Administrators**: Partner-specific tenant and user management
+- **End Clients**: Access DPIA runtime through partner-branded domains
+
+### Business Value
+- **Multi-Tenant SaaS**: Scalable partner and tenant management
+- **White-Label Ready**: Partner-branded domain support
+- **GDPR Compliance**: Privacy-first architecture with European data sovereignty
+- **Enterprise Ready**: Professional admin interface for business operations
+
+## 🎯 **DEVELOPMENT STATUS**
+
+### **VERSION 1.0.0: ADMIN CONSOLE LAUNCH COMPLETE ✅**
+- **PRODUCTION DEPLOYMENT**: Live at https://avantle.ai with full functionality
+- **ADMIN CONSOLE**: Complete Platform Admin and Partner Portal interfaces
+- **CORE INTEGRATION**: Fully connected to deployed core-avantle-ai API
+- **VERSION SYSTEM**: Complete version management with changelog page
+- **BUSINESS READY**: Full multi-tenant partner and tenant management capabilities
+
+### **FUTURE ENHANCEMENT OPPORTUNITIES**
+
+#### **Usage Analytics & Monitoring** 📊
+- **Dashboard Metrics**: Advanced usage analytics and tenant monitoring
+- **Performance Tracking**: API response times and system health metrics
+- **User Activity**: Detailed audit logs and admin activity tracking
+
+#### **Advanced Features** 🚀
+- **Bulk Operations**: Mass partner/tenant creation and management
+- **Email Notifications**: Automated alerts for partner and tenant events
+- **Advanced Filtering**: Enhanced search and filtering across all entities
+- **Export Functionality**: Data export capabilities for reporting
+
+#### **Partner Experience** 💼
+- **Partner Onboarding**: Guided setup process for new partners
+- **Self-Service Portal**: Partner self-management capabilities
+- **Billing Integration**: Usage-based billing and invoice generation
+- **Custom Branding**: Partner-specific UI customization options
+
+**Local Path**: `C:\Users\rasti\Projects\avantlehq\avantle-ai\`
+
+## Version History
+
+### v1.0.0 "Admin Console Launch" (2026-01-04)
+- 🚀 **ADMIN CONSOLE COMPLETE**: Platform Admin Console (/admin) and Partner Portal (/partners)
+- 🏢 **PARTNER MANAGEMENT**: Full CRUD operations for partner organizations  
+- 🏗️ **TENANT DASHBOARD**: System-wide tenant management with filtering and statistics
+- 🔐 **ROLE-BASED AUTH**: JWT authentication with Platform Admin and Partner Admin roles
+- 🎨 **MODERN UI**: Card-based layout with DPIA color scheme and responsive design
+- 🔌 **CORE API INTEGRATION**: Connected to deployed core-avantle-ai control plane
+- 📊 **ADMIN DASHBOARD**: System statistics, activity feed, and usage analytics
+- 🛡️ **SECURITY**: Unauthorized access handling and proper role validation
+- ⚡ **PRODUCTION READY**: Full deployment ready with error handling and loading states
+- 📋 **VERSION MANAGEMENT**: Complete version tracking system with changelog page
