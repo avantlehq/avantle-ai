@@ -1,10 +1,21 @@
 // VERSION MANAGEMENT SYSTEM FOR AVANTLE.AI
 // This file tracks the current version and changelog for the Avantle.ai platform
 
-export const VERSION = '1.1.3'
-export const VERSION_NAME = 'Content Cleanup & Manifesto'
+export const VERSION = '1.1.4'
+export const VERSION_NAME = 'Language Switcher Removal'
 
 export const CHANGELOG = [
+  {
+    version: '1.1.4',
+    name: 'Language Switcher Removal',
+    date: '2026-01-04',
+    changes: [
+      '🗑️ **LANGUAGE SWITCHER REMOVED**: Completely removed language switcher component and file',
+      '🧹 **COMPONENT CLEANUP**: Deleted language-switcher.tsx component',
+      '🎯 **HEADER SIMPLIFICATION**: Cleaned header to remove all language switching UI',
+      '✅ **CONFIRMED REMOVAL**: No more Globe icon or language dropdown in navigation'
+    ]
+  },
   {
     version: '1.1.3',
     name: 'Content Cleanup & Manifesto',

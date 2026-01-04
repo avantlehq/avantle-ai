@@ -6,7 +6,7 @@ import { Shield, User, Settings } from "lucide-react"
 // import type { User as UserType } from "@/lib/auth"
 import { getVersionString } from "@/src/lib/version"
 // import { useTranslation } from "@/lib/i18n/use-translation"
-// import { LanguageSwitcher } from "./language-switcher"
+// import { LanguageSwitcher } from "./language-switcher" - REMOVED
 
 export function SiteHeader() {
   // const [user, setUser] = useState<UserType | null>(null)
@@ -95,7 +95,7 @@ export function SiteHeader() {
         {/* User Actions */}
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <div className="flex items-center space-x-4">
-            {/* <LanguageSwitcher /> Temporarily disabled */}
+            {/* LanguageSwitcher COMPLETELY REMOVED */}
             {user ? (
               <div className="flex items-center space-x-3">
                 <div className="hidden sm:block text-right">
