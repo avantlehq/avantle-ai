@@ -122,24 +122,24 @@ export const translations: Record<Locale, Translation> = {
     // Navigation
     platform: 'Platform',
     privacyByDesign: 'Privacy by Design',
-    dpiaSuite: 'DPIA Suite',
+    dpiaSuite: 'Privacy Platform',
     partners: 'Partners',
     platformAdmin: 'Platform Admin',
     login: 'Login',
     
     // Homepage
-    europeanPrivacyPlatform: 'European Privacy Platform',
-    heroTitle: 'Avantle Privacy Platform',
-    heroSubtitle: 'Complete GDPR compliance automation for European businesses.',
-    heroDescription: 'Privacy by Design. Data sovereignty guaranteed.',
+    europeanPrivacyPlatform: 'Privacy Platform',
+    heroTitle: 'Privacy Platform',
+    heroSubtitle: 'Privacy by Design',
+    heroDescription: '',
     
     // Features
     dpiaAutomation: 'DPIA Automation',
     dpiaAutomationDesc: 'Automated Data Protection Impact Assessments with expert guidance',
     multiTenantPlatform: 'Multi-Tenant Platform',
     multiTenantPlatformDesc: 'White-label solutions for partners and enterprise clients',
-    europeanFirst: 'European First',
-    europeanFirstDesc: 'Built for EU data sovereignty and GDPR compliance',
+    europeanFirst: 'GDPR Compliant',
+    europeanFirstDesc: 'Built for European data sovereignty and GDPR compliance',
     
     // Buttons and actions
     launchPlatform: 'Launch Platform',
@@ -239,24 +239,24 @@ export const translations: Record<Locale, Translation> = {
     // Navigation
     platform: 'Platforma',
     privacyByDesign: 'Privacy by Design',
-    dpiaSuite: 'DPIA Suite',
+    dpiaSuite: 'Privacy Platforma',
     partners: 'Partneri',
     platformAdmin: 'Admin Platformy',
     login: 'Prihlásenie',
     
     // Homepage
-    europeanPrivacyPlatform: 'Európska Privacy Platforma',
-    heroTitle: 'Avantle Privacy Platform',
-    heroSubtitle: 'Kompletná automatizácia GDPR compliance pre európske firmy.',
-    heroDescription: 'Privacy by Design. Dátová suverenita zaručená.',
+    europeanPrivacyPlatform: 'Privacy Platforma',
+    heroTitle: 'Privacy Platforma',
+    heroSubtitle: 'Privacy by Design',
+    heroDescription: '',
     
     // Features
     dpiaAutomation: 'DPIA Automatizácia',
     dpiaAutomationDesc: 'Automatizované hodnotenie vplyvu na ochranu údajov s expertným vedením',
     multiTenantPlatform: 'Multi-Tenant Platforma',
     multiTenantPlatformDesc: 'White-label riešenia pre partnerov a enterprise klientov',
-    europeanFirst: 'Európa na Prvom Mieste',
-    europeanFirstDesc: 'Postavené na EU dátovej suverenite a GDPR compliance',
+    europeanFirst: 'GDPR Kompatibilné',
+    europeanFirstDesc: 'Postavené na európskej dátovej suverenite a GDPR compliance',
     
     // Buttons and actions
     launchPlatform: 'Spustiť Platformu',
@@ -356,24 +356,24 @@ export const translations: Record<Locale, Translation> = {
     // Navigation
     platform: 'Plattform',
     privacyByDesign: 'Privacy by Design',
-    dpiaSuite: 'DPIA Suite',
+    dpiaSuite: 'Privacy Plattform',
     partners: 'Partner',
     platformAdmin: 'Plattform Admin',
     login: 'Anmeldung',
     
     // Homepage
-    europeanPrivacyPlatform: 'Europäische Privacy Platform',
-    heroTitle: 'Avantle Privacy Platform',
-    heroSubtitle: 'Vollständige DSGVO-Compliance-Automatisierung für europäische Unternehmen.',
-    heroDescription: 'Privacy by Design. Datensouveränität garantiert.',
+    europeanPrivacyPlatform: 'Privacy Plattform',
+    heroTitle: 'Privacy Plattform',
+    heroSubtitle: 'Privacy by Design',
+    heroDescription: '',
     
     // Features
     dpiaAutomation: 'DPIA Automatisierung',
     dpiaAutomationDesc: 'Automatisierte Datenschutz-Folgenabschätzungen mit Expertenberatung',
     multiTenantPlatform: 'Multi-Tenant Plattform',
     multiTenantPlatformDesc: 'White-Label-Lösungen für Partner und Unternehmenskunden',
-    europeanFirst: 'Europa Zuerst',
-    europeanFirstDesc: 'Gebaut für EU-Datensouveränität und DSGVO-Compliance',
+    europeanFirst: 'DSGVO Konform',
+    europeanFirstDesc: 'Gebaut für europäische Datensouveränität und DSGVO-Compliance',
     
     // Buttons and actions
     launchPlatform: 'Plattform Starten',

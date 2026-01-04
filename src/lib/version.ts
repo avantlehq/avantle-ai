@@ -1,10 +1,23 @@
 // VERSION MANAGEMENT SYSTEM FOR AVANTLE.AI
 // This file tracks the current version and changelog for the Avantle.ai platform
 
-export const VERSION = '1.1.6'
-export const VERSION_NAME = 'Language Switcher Restoration'
+export const VERSION = '1.1.7'
+export const VERSION_NAME = 'Translation Content Fix'
 
 export const CHANGELOG = [
+  {
+    version: '1.1.7',
+    name: 'Translation Content Fix',
+    date: '2026-01-04',
+    changes: [
+      '🌐 **TRANSLATION FIX**: Updated translation files to match current content',
+      '📝 **CONTENT SYNC**: Fixed "Privacy Platform" instead of "European Privacy Platform"',
+      '🏷️ **GDPR BRANDING**: Updated "European First" → "GDPR Compliant" in all languages',
+      '🇸🇰 **SLOVAK**: "Privacy Platforma", "GDPR Kompatibilné"',
+      '🇩🇪 **GERMAN**: "Privacy Plattform", "DSGVO Konform"',
+      '✅ **WORKING TRANSLATIONS**: Language switcher now changes content properly!'
+    ]
+  },
   {
     version: '1.1.6',
     name: 'Language Switcher Restoration',
