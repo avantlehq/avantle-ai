@@ -1,10 +1,24 @@
 // VERSION MANAGEMENT SYSTEM FOR AVANTLE.AI
 // This file tracks the current version and changelog for the Avantle.ai platform
 
-export const VERSION = '1.1.16' 
-export const VERSION_NAME = 'German Translation Fix'
+export const VERSION = '1.2.0' 
+export const VERSION_NAME = 'Premium Design Upgrade'
 
 export const CHANGELOG = [
+  {
+    version: '1.2.0',
+    name: 'Premium Design Upgrade',
+    date: '2026-01-05',
+    changes: [
+      '🎨 **PREMIUM TYPOGRAPHY**: Upgraded to Inter variable fonts with tighter letter-spacing (-0.025em)',
+      '✨ **GRADIENT BUTTONS**: Added premium gradient buttons with hover glow effects',
+      '🎯 **MULTI-COLOR ICONS**: Upgraded icons with gradient backgrounds and hover animations',
+      '🌑 **DARK NAVY BACKGROUND**: Implemented premium #050505 background with subtle mesh texture',
+      '🔮 **GLOW EFFECTS**: Added blue, purple, green, and orange glow shadows for interactive elements',
+      '⚡ **SMOOTH ANIMATIONS**: Enhanced transitions with 300ms duration and scale effects',
+      '🎭 **MESH GRADIENTS**: Added radial gradient overlays for depth and visual interest'
+    ]
+  },
   {
     version: '1.1.16',
     name: 'German Translation Fix',
