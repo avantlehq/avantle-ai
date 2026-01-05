@@ -1,10 +1,22 @@
 // VERSION MANAGEMENT SYSTEM FOR AVANTLE.AI
 // This file tracks the current version and changelog for the Avantle.ai platform
 
-export const VERSION = '1.3.0'
-export const VERSION_NAME = 'Context Module Implementation'
+export const VERSION = '1.3.1'
+export const VERSION_NAME = 'Context Module Build Fix'
 
 export const CHANGELOG = [
+  {
+    version: '1.3.1',
+    name: 'Context Module Build Fix',
+    date: '2026-01-05',
+    changes: [
+      '🔧 **BUILD FIX**: Added missing dependencies (@supabase/supabase-js, jsonwebtoken, zod)',
+      '📦 **PACKAGE UPDATES**: Added @types/jsonwebtoken for TypeScript support',
+      '📝 **SCHEMA FIX**: Added missing VendorQueryParamsSchema export',
+      '✅ **DEPLOYMENT READY**: Resolved all build errors for production deployment',
+      '🚀 **CONTEXT MODULE**: Now fully deployable with all dependencies included'
+    ]
+  },
   {
     version: '1.3.0',
     name: 'Context Module Implementation',

@@ -646,6 +646,13 @@ export const PhysicalLocationQueryParamsSchema = ListQueryParamsSchema.extend({
   jurisdiction_id: UUIDSchema.optional(),
 });
 
+export const VendorQueryParamsSchema = ListQueryParamsSchema.extend({
+  contact_email: EmailSchema.optional(),
+  primary_contact: z.string().optional(),
+  website: UrlSchema.optional(),
+  status: EntityStatusSchema.optional(),
+});
+
 export const SystemQueryParamsSchema = ListQueryParamsSchema.extend({
   criticality: CriticalitySchema.optional(),
 });
