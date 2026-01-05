@@ -1,10 +1,21 @@
 // VERSION MANAGEMENT SYSTEM FOR AVANTLE.AI
 // This file tracks the current version and changelog for the Avantle.ai platform
 
-export const VERSION = '1.3.1'
-export const VERSION_NAME = 'Context Module Build Fix'
+export const VERSION = '1.3.2'
+export const VERSION_NAME = 'Deployment Fix'
 
 export const CHANGELOG = [
+  {
+    version: '1.3.2',
+    name: 'Deployment Fix',
+    date: '2026-01-05',
+    changes: [
+      '🔧 **LOCKFILE FIX**: Removed pnpm-lock.yaml to force npm usage on Vercel',
+      '📦 **NPM CONFIG**: Added .npmrc with legacy-peer-deps for compatibility',
+      '🚀 **DEPLOYMENT**: Fixed Vercel build process to use npm instead of pnpm',
+      '✅ **BUILD READY**: Context module now deployable with correct package manager'
+    ]
+  },
   {
     version: '1.3.1',
     name: 'Context Module Build Fix',
