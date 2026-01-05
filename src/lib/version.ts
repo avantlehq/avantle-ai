@@ -1,10 +1,59 @@
 // VERSION MANAGEMENT SYSTEM FOR AVANTLE.AI
 // This file tracks the current version and changelog for the Avantle.ai platform
 
-export const VERSION = '1.1.13'
-export const VERSION_NAME = 'Complete Documentation Update'
+export const VERSION = '1.2.2' 
+export const VERSION_NAME = 'Privacy Management Rebrand'
 
 export const CHANGELOG = [
+  {
+    version: '1.2.2',
+    name: 'Privacy Management Rebrand',
+    date: '2026-01-05',
+    changes: [
+      '🏷️ **REBRAND**: Changed "Privacy Platform" to "Privacy Management" across all languages',
+      '📝 **NEW SUBHEADLINE**: Updated to "The platform for automated DPIA and GDPR compliance"',
+      '🌍 **MULTILINGUAL**: Updated EN/SK/DE translations with new branding',
+      '🎨 **TYPOGRAPHY**: Changed subheadline color to dimmed white (#A0A0A0) for better hierarchy',
+      '✨ **BRAND CONSISTENCY**: Unified messaging across all platform touchpoints'
+    ]
+  },
+  {
+    version: '1.2.1',
+    name: 'Design Revert',
+    date: '2026-01-05',
+    changes: [
+      '↩️ **DESIGN REVERT**: Reverted all premium design changes back to standard layout',
+      '🎨 **TYPOGRAPHY**: Restored standard Inter fonts without variable font configuration',
+      '🔵 **BUTTONS**: Reverted to simple blue/outline button styling',
+      '📐 **ICONS**: Restored simple flat icon design with standard colors',
+      '🌫️ **BACKGROUND**: Reverted back to original dark grey (#192734) background',
+      '✨ **CLEAN DESIGN**: Returned to proven, stable design system'
+    ]
+  },
+  {
+    version: '1.1.16',
+    name: 'German Translation Fix',
+    date: '2026-01-05',
+    changes: [
+      '🇩🇪 **GERMAN TYPO FIX**: Fixed "Privacy Plattform" to "Privacy Platform" in all German translations',
+      '📝 **NAVIGATION FIX**: Updated dpiaSuite translation from "Privacy Plattform" to "Privacy Platform"',
+      '🏠 **HOMEPAGE FIX**: Fixed heroTitle and europeanPrivacyPlatform translations',
+      '✨ **CONSISTENCY**: All German text now uses correct English "Platform" spelling',
+      '🔧 **QUALITY**: Fixed typography inconsistency in German language version'
+    ]
+  },
+  {
+    version: '1.1.15',
+    name: 'Footer Text Updates',
+    date: '2026-01-04',
+    changes: [
+      '📝 **FOOTER CLEANUP**: Updated description from "Privacy-first AI platform..." to "Privacy Management Platform"',
+      '🏷️ **LINK UPDATE**: Changed "DPIA Suite" to "Privacy Platform" in product links',
+      '🎯 **SIMPLIFIED MESSAGING**: More concise and focused platform description',
+      '✨ **CONSISTENT BRANDING**: Aligned footer messaging with current platform positioning',
+      '🔧 **REPOSITORY FIX**: Restored correct avantle.ai content after git conflicts'
+    ]
+  },
   {
     version: '1.1.13',
     name: 'Complete Documentation Update',
