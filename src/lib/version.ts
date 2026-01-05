@@ -1,10 +1,21 @@
 // VERSION MANAGEMENT SYSTEM FOR AVANTLE.AI
 // This file tracks the current version and changelog for the Avantle.ai platform
 
-export const VERSION = '1.3.2'
-export const VERSION_NAME = 'Deployment Fix'
+export const VERSION = '1.3.3'
+export const VERSION_NAME = 'Force Fresh Deploy'
 
 export const CHANGELOG = [
+  {
+    version: '1.3.3',
+    name: 'Force Fresh Deploy',
+    date: '2026-01-05',
+    changes: [
+      '🚀 **FRESH DEPLOYMENT**: Trigger fresh deployment without cached pnpm-lock.yaml',
+      '🗑️ **CACHE BYPASS**: Force Vercel to rebuild without outdated lockfile cache',
+      '📦 **NPM ENFORCEMENT**: Ensure npm usage with fresh build environment',
+      '✅ **CONTEXT MODULE**: Deploy Context module with clean build process'
+    ]
+  },
   {
     version: '1.3.2',
     name: 'Deployment Fix',
